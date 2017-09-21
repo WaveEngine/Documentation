@@ -1,0 +1,99 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [            			
+			"Common/WaveEngine.Box2D/Projects/Windows/WaveEngine.Box2D.csproj",		
+			"Common/WaveEngine.Common/Projects/Windows/WaveEngine.Common.csproj",
+			"Common/WaveEngine.Components/Projects/Windows/WaveEngine.Components.csproj",
+			"Common/WaveEngine.Framework/Projects/Windows/WaveEngine.Framework.csproj",
+			"Common/WaveEngine.Materials/Projects/Windows/WaveEngine.Materials.csproj",
+			"Common/WaveEngine.Physics/Projects/Windows/WaveEngine.Physics.csproj",
+			"Extensions/WaveEngine.AI/Projects/Windows/WaveEngine.AI.csproj",
+			"Extensions/WaveEngine.Analytics/Projects/Windows/WaveEngine.Analytics.csproj",
+			"Extensions/WaveEngine.Cardboard/Projects/Windows/WaveEngine.Cardboard.csproj",
+			"Extensions/WaveEngine.Dolby/Projects/Windows/WaveEngine.Dolby/WaveEngine.Dolby.csproj",
+			"Extensions/WaveEngine.Hololens/Projects/WaveEngine.Hololens.csproj",
+			"Extensions/WaveEngine.ImageEffects/Projects/Windows/WaveEngine.ImageEffects.csproj",
+			"Extensions/WaveEngine.Kinect/WaveEngine.Kinect.csproj",
+			"Extensions/WaveEngine.LeapMotion/WaveEngine.LeapMotion.csproj",
+			"Extensions/WaveEngine.Networking/Projects/Windows/WaveEngine.Networking.csproj",
+			"Extensions/WaveEngine.NoesisGUI/Projects/Windows/WaveEngine.NoesisGUI.csproj",
+			"Extensions/WaveEngine.OculusRift/WaveEngine.OculusRift.csproj",
+			"Extensions/WaveEngine.OpenVR/Project/WaveEngine.OpenVR.csproj",
+			"Extensions/WaveEngine.Social/Projects/Windows/WaveEngine.Social.csproj",
+			"Engine/Extensions/WaveEngine.Spine/Projects/Windows/WaveEngine.Spine.csproj",
+			"Extensions/WaveEngine.TiledMap/Projects/Windows/WaveEngine.TiledMap.csproj",
+			"Extensions/WaveEngine.Vuforia/Projects/Windows/WaveEngine.Vuforia.csproj"					
+          ],
+		  "src":"../"
+         ,
+        }
+      ],
+      "dest": "api"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "api/**.yml",
+          "api/index.md"
+        ]
+      },
+      {
+        "files": [
+          "recipes/**.md",
+          "recipes/**/toc.yml",
+          "toc.yml",
+          "*.md"
+        ],
+        "exclude": [
+          "obj/**",
+          "_site/**"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "recipes/**/images/**"
+        ],
+        "exclude": [
+          "obj/**",
+          "_site/**"
+        ]
+      }
+    ],
+    "overwrite": [
+      {
+        "files": [
+          "apidoc/**.md",
+		  "api/**"
+		  ],
+        "exclude": [
+          "obj/**",
+          "_site/**"
+        ]
+      }
+    ],
+    "dest": "../DocOnline",    
+	"globalMetadata":{
+		"_appTitle": "Wave Engine API Doc",
+		"_enableSearch": "true",
+		"_gitContribute": {
+			"repo":"https://github.com/juanlao/Documentation.git",
+			"branch": "develop"
+		}
+      },
+    "fileMetadataFiles": [],
+    "template": [
+      "WaveTemplate"
+    ],
+    "postProcessors": [],
+    "noLangKeyword": false,
+    "keepFileLink": false,
+    "cleanupCacheHistory": false
+  }
+}

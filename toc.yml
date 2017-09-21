@@ -1,0 +1,6 @@
+- name: Recipes
+  href: recipes/
+  homepage: recipes/GettingStarted/Getting-Started-on-Windows.md
+- name: Api Documentation
+  href: api/
+  homepage: api/index.md

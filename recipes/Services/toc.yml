@@ -1,0 +1,19 @@
+- name: Detect keyboard, Mouse and Touch inputs
+  href: Detect-keyboard,-Mouse-and-Touch-inputs.md  
+- name: Play Sound (Sound Effects & Themes)
+  href: Play-Sound-(Sound-Effects-&-Themes).md
+- name: Create a timer
+  href: Create-a-timer.md
+- name: Saving your game
+  href: Saving-your-game.md
+- name: Recording the microphone input
+  href: Recording-the-microphone-input.md
+- name: Capture camera input
+  href: Capture-camera-input.md  
+- name: Reproduce a video into my game
+  href: Reproduce-a-video-into-my-game.md  
+- name: Using the Accelerometer
+  href: Using-the-Accelerometer.md
+- name: Using the Compass
+  href: Using-the-Compass.md
+

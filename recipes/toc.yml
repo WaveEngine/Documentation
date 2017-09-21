@@ -1,0 +1,24 @@
+- name: Getting started
+  href: GettingStarted/toc.yml
+  topicHref: GettingStarted/Getting-Started-on-Windows.md
+- name: Basic
+  href: Basic/toc.yml
+  topicHref: Basic/Component-based-Architecture.md
+- name: Graphics 3D
+  href: Graphics3D/toc.yml
+  topicHref: Graphics3D/Create-a-3D-Camera.md
+- name: Graphics 2D
+  href: Graphics2D/toc.yml
+  topicHref: Graphics2D/Create-a-2D-Camera.md
+- name: Services
+  href: Services/toc.yml
+  topicHref: Services/Detect-keyboard,-Mouse-and-Touch-inputs.md  
+- name: UI
+  href: UI/toc.yml
+  topicHref: UI/Create-a-button.md
+- name: Extra
+  href: Extra/toc.yml
+  topicHref: Extra/Monetize-your-games.md
+- name: Performance
+  href: Performance/toc.yml
+  topicHref: Performance/Activate-diagnostics-mode.md

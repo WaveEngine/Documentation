@@ -1,0 +1,11 @@
+- name: Monetize your games
+  href: Monetize-your-games.md
+- name: Create multiplayer game
+  href: Create-multiplayer-game.md
+- name: Connect my game with Game Center and Google Play services
+  href: Connect-my-game-with-Game-Center-and-Google-Play-services.md
+- name: Add analytics statistics in my game
+  href: Add-statistic-analytics-in-my-game.md
+- name: Add Dolby support  
+  href: Add-Dolby-support.md
+
