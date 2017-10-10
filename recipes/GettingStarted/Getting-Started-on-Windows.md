@@ -23,7 +23,7 @@ Every prerequisite is installed by Wave Engine installer, detecting whether it i
 
 # Install Wave Engine
 
-Visit the official [Wave Engine](https://waveengine.net/) web-site, click on Download Wave Engine button (it will redirect to the [Download](http://waveengine.net/Download) page) and finally Download Installer one. Please assure the platform below is Windows.
+Visit the official [Wave Engine](https://waveengine.net/) web-site, click on Download Wave Engine button (it will redirect to the [Download](http://waveengine.net/Downloads) page) and finally Download Installer one. Please assure the platform below is Windows.
 
 ![Download Wave Windows](images/DownloadWaveIntallerWindows.PNG)
 
