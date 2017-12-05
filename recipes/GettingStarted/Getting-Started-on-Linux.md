@@ -6,38 +6,39 @@ Getting Started with Wave Engine on Linux (Ubuntu):
 
 # Prerequisites
 
-## IDE
+## Mono
 
-You need to install [MonoDevelop](http://monodevelop.com/) 5.9 or higher to develop with Wave Engine.
-Most Linux distributions include an earlier version of MonoDevelop, so you need to install it from the Mono official package repository.
+You need to install [Mono](http://www.mono-project.com/download/#download-lin) 5.2 or higher to develop with WaveEngine. Follow the instructions from the official page.
+
+## Other dependecies
+    sudo apt-get isntall gtk-sharp2 sox libsdl2-mixer-2.0.0
+
+## IDE
 
 ### Installing MonoDevelop
 
-Follow the instructions given in the official Mono page: [Install Mono on Linux](http://www.mono-project.com/docs/getting-started/install/linux/#debian-ubuntu-and-derivatives)
+You need to install [MonoDevelop](http://monodevelop.com/) 6.0 or higher to develop with Wave Engine.
+Most Linux distributions include an earlier version of MonoDevelop, so you need to install it from the Mono official package repository.
 
-In brief, if you are running on Ubuntu, execute the following commands on a console:
+Follow the instructions given in the official MonoDevelop page: [Install MonoDevelop on Linux](http://www.monodevelop.com/download/linux/)
 
-    $ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF    
-    $ echo "deb http://download.mono-project.com/repo/debian wheezy main" | sudo tee /etc/apt/sources.list.d/mono-xamarin.list    
-    $ sudo apt-get update    
-    $ sudo apt-get install monodevelop  
+The use of Flatpak to execute MonoDevelop comes with some caveats produced by the sandbox where it runs, they will be specified in the FAQ that you can found at the bottom of this page.
+
+To enjoy a full experience while developing with Wave Engine, we recomends you to use MonoDevelop without Flatpak, this can be achieved building MonoDevelop from sources at [GitHub](https://github.com/mono/monodevelop).
+
+Here you have some useful links that can help you to run MonoDevelop without Flatpak:
+- https://github.com/mono/monodevelop#compiling
+- https://kvssoft.wordpress.com/2016/12/13/building-monodevelop-on-ubuntu/
 
 ### Launching MonoDevelop
 
-To open MonoDevelop, please execute the following command on a console:
+To open MonoDevelop using Flatpak, please execute the following command on a console:
 
-    $ monodevelop
+    $ flatpak run com.xamarin.MonoDevelop --filesystem=host
+
+The parameter '--filesystem=host' is given to avoid issues when WaveEngine exports assets.
 
 It is recommended to create a shotcut anywhere on the desktop to access it more easily. Please refer to your corresponding Window Manager to gather how it is done.
-
-## NuGet Certificates
-
-[NuGet](https://www.nuget.org/) is the package manager for the .NET development platform. Most Linux distributions do not trust on NuGet or Microsoft's websites certificates, so you need to import the latests into the machine store. Below commands will do just that, within a console:
-
-    $ sudo mozroots --import --machine --sync
-    $ sudo certmgr -ssl -m https://go.microsoft.com
-    $ sudo certmgr -ssl -m https://nugetgallery.blob.core.windows.net
-    $ sudo certmgr -ssl -m https://nuget.org
 
 # Install Wave Engine
 
@@ -67,5 +68,8 @@ Please, navigate to [My First Application](My-First-Application.md).
 
  - **Q: WaveEditor crash when I create a new project, and I'm using Monodevelop 5.5 or earlier:** 
  - **A:** Install MonoDevelop 5.9 or a higher version. Earlier versions like 5.5 contains a Bug in mono runtime that causes a crash in WaveEditor: [Bug 24084](https://bugzilla.xamarin.com/show_bug.cgi?id=24084)
+
+ - **Q: How install Mono in Ubuntu 17.04 or 17.10?**
+ - **A:** Install it following the steps indicated for Ubuntu 16.04.
 
 _If you find any question which may fit here, please [contact us](https://waveengine.net/Company#Contact)._
