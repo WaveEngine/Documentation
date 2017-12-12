@@ -66,10 +66,13 @@ Please, navigate to [My First Application](My-First-Application.md).
 
 # FAQ
 
- - **Q: WaveEditor crash when I create a new project, and I'm using Monodevelop 5.5 or earlier:** 
- - **A:** Install MonoDevelop 5.9 or a higher version. Earlier versions like 5.5 contains a Bug in mono runtime that causes a crash in WaveEditor: [Bug 24084](https://bugzilla.xamarin.com/show_bug.cgi?id=24084)
-
  - **Q: How install Mono in Ubuntu 17.04 or 17.10?**
  - **A:** Install it following the steps indicated for Ubuntu 16.04.
+
+ - **Q: When I run my project from MonoDevelop, the music does not sound.**
+ - **A:** This is a known issue launching the project from MonoDevelop installed using Flatpak. You can execute your application from the terminal or use MonoDevelop build from sources.
+
+ - **Q: When I try to run my project from WaveEngine Editor, MonoDevelop is not opened.**
+ - **A:** This is a known issue runing the project from WaveEngine Editor with MonoDevelop installed using Flatpak. You can execute your application from the terminal or run from MonoDevelop. Also, depending of your launcher you can associate the '.sln' file extension to launch MonoDevelop.
 
 _If you find any question which may fit here, please [contact us](https://waveengine.net/Company#Contact)._
