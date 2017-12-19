@@ -11,7 +11,7 @@ Getting Started with Wave Engine on Linux (Ubuntu):
 You need to install [Mono](http://www.mono-project.com/download/#download-lin) 5.2 or higher to develop with WaveEngine. Follow the instructions from the official page.
 
 ## Other dependecies
-    sudo apt-get isntall gtk-sharp2 sox libsdl2-mixer-2.0.0
+    sudo apt-get install gtk-sharp2 sox libsdl2-mixer-2.0.0
 
 ## IDE
 
@@ -22,13 +22,16 @@ Most Linux distributions include an earlier version of MonoDevelop, so you need 
 
 Follow the instructions given in the official MonoDevelop page: [Install MonoDevelop on Linux](http://www.monodevelop.com/download/linux/)
 
-The use of Flatpak to execute MonoDevelop comes with some caveats produced by the sandbox where it runs, they will be specified in the FAQ that you can found at the bottom of this page.
+#### Warning
+    The use of Flatpak to execute MonoDevelop comes with some caveats produced by the sandbox where it runs, they will be specified in the FAQ that you can found at the bottom of this page.
 
-To enjoy a full experience while developing with Wave Engine, we recomends you to use MonoDevelop without Flatpak, this can be achieved building MonoDevelop from sources at [GitHub](https://github.com/mono/monodevelop).
+    To enjoy a full experience while developing with Wave Engine, we recomends you to use MonoDevelop without Flatpak, this can be achieved building MonoDevelop from sources at [GitHub](https://github.com/mono/monodevelop).
 
-Here you have some useful links that can help you to run MonoDevelop without Flatpak:
-- https://github.com/mono/monodevelop#compiling
-- https://kvssoft.wordpress.com/2016/12/13/building-monodevelop-on-ubuntu/
+    Here you have some useful links that can help you to run MonoDevelop without Flatpak:
+    - https://github.com/mono/monodevelop#compiling
+    - https://kvssoft.wordpress.com/2016/12/13/building-monodevelop-on-ubuntu/
+
+    We are working to improve the experience using MonoDevelop with Flatpak to develop with WaveEngine.
 
 ### Launching MonoDevelop
 
@@ -38,7 +41,7 @@ To open MonoDevelop using Flatpak, please execute the following command on a con
 
 The parameter '--filesystem=host' is given to avoid issues when WaveEngine exports assets.
 
-It is recommended to create a shotcut anywhere on the desktop to access it more easily. Please refer to your corresponding Window Manager to gather how it is done.
+It is recommended to create a shortcut anywhere on the desktop to access it more easily. Please refer to your corresponding Window Manager to gather how it is done.
 
 # Install Wave Engine
 
@@ -69,10 +72,16 @@ Please, navigate to [My First Application](My-First-Application.md).
  - **Q: How install Mono in Ubuntu 17.04 or 17.10?**
  - **A:** Install it following the steps indicated for Ubuntu 16.04.
 
- - **Q: When I run my project from MonoDevelop, the music does not sound.**
+ - **Q: When I build my project from MonoDevelop, the proccess fails while exporting sound files.**
+ - **A:** This is a known issue launching the project from MonoDevelop installed using Flatpak. The exporter uses tools that is not included in the Flatpak sandbox. A workaround is to run the project using WaveEngine Editor first, this proccess exports the sound files that will be used by MonoDevelop the nexts times you build the project.
+
+ - **Q: When I run my project from MonoDevelop, the MusicPlayer service throws an exception when the Pay method is called.**
  - **A:** This is a known issue launching the project from MonoDevelop installed using Flatpak. You can execute your application from the terminal or use MonoDevelop build from sources.
 
- - **Q: When I try to run my project from WaveEngine Editor, MonoDevelop is not opened.**
- - **A:** This is a known issue runing the project from WaveEngine Editor with MonoDevelop installed using Flatpak. You can execute your application from the terminal or run from MonoDevelop. Also, depending of your launcher you can associate the '.sln' file extension to launch MonoDevelop.
+ - **Q: When I run my project from MonoDevelop, the mouse is not recognized.**
+ - **A:** This is a known issue launching the project from MonoDevelop installed using Flatpak. You can execute your application from the terminal or use MonoDevelop build from sources.
+
+ - **Q: When I click in "File -> Open C# Solution..." of WaveEngine Editor menu, MonoDevelop is not opened.**
+ - **A:** This is a known issue runing the project from WaveEngine Editor with MonoDevelop installed using Flatpak. You open MonoDevelop and open the sln file in the project folder. Also, depending of your launcher you can associate the '.sln' file extension to launch MonoDevelop.
 
 _If you find any question which may fit here, please [contact us](https://waveengine.net/Company#Contact)._
