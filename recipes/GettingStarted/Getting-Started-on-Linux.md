@@ -79,7 +79,7 @@ Please, navigate to [My First Application](My-First-Application.md).
  - **A:** This is a known issue launching the project from MonoDevelop installed using Flatpak. You can execute your application from the terminal or use MonoDevelop build from sources.
 
  - **Q: When I run my project from MonoDevelop, the mouse is not recognized.**
- - **A:** This is a known issue launching the project from MonoDevelop installed using Flatpak. You can execute your application from the terminal or use MonoDevelop build from sources.
+ - **A:** This is a known issue launching the project from MonoDevelop installed using Flatpak. A found workaround is to resize the game window, if you move the window this behavior can reappear. You can execute your application from the terminal or use MonoDevelop build from sources.
 
  - **Q: When I click in "File -> Open C# Solution..." of WaveEngine Editor menu, MonoDevelop is not opened.**
  - **A:** This is a known issue runing the project from WaveEngine Editor with MonoDevelop installed using Flatpak. You open MonoDevelop and open the sln file in the project folder. Also, depending of your launcher you can associate the '.sln' file extension to launch MonoDevelop.
