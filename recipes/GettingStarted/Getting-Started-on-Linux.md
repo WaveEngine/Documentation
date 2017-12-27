@@ -37,7 +37,7 @@ Follow the instructions given in the official MonoDevelop page: [Install MonoDev
 
 To open MonoDevelop using Flatpak, please execute the following command on a console:
 
-    $ flatpak run com.xamarin.MonoDevelop --filesystem=host
+    $ flatpak run --filesystem=host com.xamarin.MonoDevelop
 
 The parameter '--filesystem=host' is given to avoid issues when WaveEngine exports assets.
 
