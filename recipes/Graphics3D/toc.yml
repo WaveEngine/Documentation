@@ -6,6 +6,8 @@
   items:
     - name: Load a Primitive
       href: Load-a-Primitive.md
+      - name: Load a Line
+      href: Load-a-Line.md
     - name: Load an FBX Model
       href: Load-an-FBX-Model.md      
     - name: Play an Animated FBX Model
